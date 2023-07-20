@@ -197,7 +197,7 @@
 }
 .online-game-description {
   margin-bottom: 10px;
-}
+}  
 .online-game-img {
   width: 342px;
   height: 400px;
@@ -339,6 +339,7 @@ footer{
   .nav-container {
     flex-direction: column;
     margin-top: 20px;
+    margin-left: 70px;
   }
   .nav-links {
     flex-direction: column;
