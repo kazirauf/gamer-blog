@@ -153,44 +153,47 @@
   margin-left: 30px;
   margin-right: 40px;
   margin-top: 50px;
+  
 }
 /* magic */
-.container {
+.image-container {
   position: relative;
-  width: 50%;
+  display: inline-block;
+  
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
+.icon-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
+.image-container:hover .icon-container {
+  opacity: 1;
+  
+}
 .container:hover .image {
   opacity: 0.3;
 }
-
-.container:hover .middle {
-  opacity: 1;
+.container:hover{
+  border: 4px solid #f948b2;
+  width: 342px;
+  height: 400px;
+  border-radius: 20px;
 }
-
-.text {
+/* Style the icon image (optional) */
+.icon-container img {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px;
+}
+.watch-text{
+  position: relative;
+  margin-top: 10px;
   color: #f948b2;
-  font-size: 16px;
+  right: 16px;
 }
 .online-game-description {
   margin-bottom: 10px;
@@ -489,4 +492,4 @@ footer{
   
 }
 
-/* mobile version style end */
+
