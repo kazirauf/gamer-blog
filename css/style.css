@@ -339,7 +339,7 @@ footer{
   .nav-container {
     flex-direction: column;
     margin-top: 20px;
-    margin-left: 70px;
+  
   }
   .nav-links {
     flex-direction: column;
